@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TV Show Ratings</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>TV Show Ratings</h1>
+
+    <% for (let i=0; i<data.length; i++) {%>
+        <div class="data">
+            <span><%= data[i].show %></span>
+    
+            <div class="rating-container" data-show="<%= data[i].show %>" data-rating="<%= data[i].rating %>">
+                <div class="rating">
+                    <span data-rating="1"><i class="fa fa-star"></i></span>
+                    <span data-rating="2"><i class="fa fa-star"></i></span>
+                    <span data-rating="3"><i class="fa fa-star"></i></span>
+                    <span data-rating="4"><i class="fa fa-star"></i></span>
+                    <span data-rating="5"><i class="fa fa-star"></i></span>
+                    <!-- <% for (let j=1; j<=5; j++) { %>
+                        <span data-rating="<%= j %>"><i class="fa fa-star"></i></span>
+                    <% } %> -->
+                </div>
+            </div>
+    
+            <span><i class="fa fa-trash"></i></span>
+        </div>
+    <% } %>
+    
+    <form action="/show" method="POST">
+        <input type="text" placeholder="Show" name="show">
+        <button type="submit">Add</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>

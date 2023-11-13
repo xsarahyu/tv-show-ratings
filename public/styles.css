@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    cursor: pointer;
+    transition: color 0.2s;
+    color: black;
+}
+
+.rating span:hover,
+.rating span.clicked {
+    color: orange;
+}
+
+.rating span.clicked ~ span {
+    color: black;
+}
+
+.fa-trash {
+    font-size: 1.5rem;
+    color: #d9534f; /* Bootstrap's danger color */
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.fa-trash:hover {
+    color: #c9302c; /* Bootstrap's darker danger color on hover */
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #5bc0de; /* Bootstrap's info color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #46b8da; /* Bootstrap's darker info color on hover */
+}
+
+.data, input {
+    width: 50%;
+}
