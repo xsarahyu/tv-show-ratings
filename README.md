@@ -3,7 +3,7 @@
 ## Description
 Welcome to the TV Show Ratings Tracker, a simple web application designed to help you keep track of your favorite TV shows and their ratings. This app allows users to add new shows, rate them using a star-based system, and delete shows when needed. Ratings are saved locally, ensuring they persist across sessions.
 
-<img src="tv-show-ratings-tracker.png">
+<img src="tv-show-ratings-tracker.png" width="400px">
 
 ### Features
 - **User Authentication**: Implements Passport.js for secure local authentication, ensuring user data protection.
